@@ -3,6 +3,7 @@
     font-family:  "Fira Sans", serif;
     font-size: 25px;
     font-weight: 200;
+    background-color: #F1BB94;
 }
 
 
@@ -90,16 +91,7 @@ td:hover tr{
     background-color: #335495;
     color: #FEFEFE;
 }
-
-body.contact{
-    background-color: #F1BB94;
-    margin: -30px 0px;
-}
-body.home{
-    background-color: #F1BB94;
-    margin: -30px 0px;
-}
-body.about{
+body{
     background-color: #F1BB94;
     margin: -30px 0px;
 }
@@ -140,15 +132,7 @@ body.about{
     margin-right: 8px;
 }
 
-body.contact .footer,
-body.home .footer{
-    position: fixed; 
-    left: 0;
-    bottom: 0; 
-    background-color: #F1BB94;
-    color: gray;
-}
-body.about .footer{
+.footer{
     background-color: #F1BB94;
     color: gray;
 } 
