@@ -1,9 +1,15 @@
-import sqlite3
-import os
-from flask import Flask, request, session, \
-    g, redirect, url_for, abort, render_template, flash
+from flask import Flask, request, redirect, render_template
+from bs4 import BeautifulSoup as BS
+import urllib.request
+import urllib3
 
 app = Flask(__name__)
+
+
+def parse(url):
+    http = urllib3.PoolManager()
+    r = http.request('GET', url)
+    return r
 
 
 @app.route('/')
@@ -15,7 +21,7 @@ def index():
         ['50–69', '0.25%–1.0%'],
         ['70+', '2.8%–9.3%'],
     ]
-    return render_template('index.html',statisticsArr=statisticsArr)
+    return render_template('index.html', statisticsArr=statisticsArr)
 
 
 @app.route('/about/')
