@@ -44,7 +44,7 @@ def about():
         ['16', 'South Africa', '1,149,591', '31,368', '929,239'],
         ['17', 'Ukraine', '1,009,493', '19,505', '773,214'],
     ]
-    return render_template('about.html',statisticsArr = statisticsArr)
+    return render_template('about.html', statisticsArr=statisticsArr)
 
 
 @app.route('/contact/', methods=['POST', 'GET'])
