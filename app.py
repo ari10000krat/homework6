@@ -1,6 +1,4 @@
 from flask import Flask, request, redirect, render_template
-from bs4 import BeautifulSoup as BS
-import urllib.request
 import urllib3
 
 app = Flask(__name__)
